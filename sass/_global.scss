@@ -1,0 +1,101 @@
+@import "variables";
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    line-height: 1;
+    font-family: $font;
+    font-weight: 400;
+    background-color: white;
+    color: $text-coler;
+}
+.button{
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 100rem;
+    font-family: $font;
+    line-height: 1;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-align: center;
+    white-space: nowrap;
+    &--primary{
+        font-weight: 700;
+        background-color: $primary-coler;
+        color: white;
+    }
+    &--outline{
+        background-color:transparent;
+        color: $primary-coler;
+        font-weight: 500;
+        border: 1px solid;
+
+    }
+    &--rounder{
+        border-radius: 10px;
+        padding: 17px 65px;
+        box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+    }
+    &--shadom{
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 90%;
+            height: 100%;
+            transform: translate(-50% , 50%);
+            background-color: rgba(245, 56, 56, 0.35);
+            filter: blur(54px);
+            border-radius: inherit;
+            
+        }
+    }
+
+}
+h1,h2,h3,h4,h5,h6{
+    color:$header-coler;
+    font-weight: bolder;
+}
+
+.heading{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: calc(50/35);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.text{
+    
+    line-height: calc(30/16);
+
+}
+.boxded{
+    max-width: 555px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: $font;
+}
+
+
+@media screen and (max-width: 767px) {
+    .button{
+        padding: 12px 24px;
+    }
+}

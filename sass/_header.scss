@@ -1,0 +1,38 @@
+.header {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    &-container {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &-auth{
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+        text-transform: capitalize;
+    }
+    &-signin{
+        font-weight: 500;
+        color: $header-coler;
+    }
+    &-signup{
+        padding: 13px 45px;
+        border-radius: 100rem;
+        color: $primary-coler;
+        border: 1px solid;
+        font-weight: 500;
+
+    }
+}
+
+
+//reponsive
+
+@media screen and (max-width: 767px) {
+    .header-auth{
+        gap: 0 20px;
+    }
+}
+
